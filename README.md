@@ -15,9 +15,9 @@
 * `pip3 install -r requirement.txt`
 
 ## 效果
-![](./square_example.png)
-![](./fb_example.png)
-![](./ig_example.jpeg)
+![](./square_example.jpg)
+![](./fb_example.jpg)
+![](./ig_example.jpg)
 
 ## 範例
 ```

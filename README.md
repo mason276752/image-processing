@@ -43,14 +43,14 @@ FB 會偵測人臉會使得圖片預覽位置偏易，拼圖對不上。<br />
 
 ## 範例
 ```sh
-./square.sh # 顏色方圖
-./fb_s1.sh # 單一大圖
-./fb_w2h1.sh # 首圖長寬比 2:1(1大2小 首圖在上)
-./fb_w3h2.sh # 首圖長寬比 3:2(1大3小 首圖在上)
-./fb_w1h2.sh # 首圖長寬比 1:2(1大2小 首圖在左)
-./fb_w2h3.sh # 首圖長寬比 2:3(1大3小 首圖在左)
-./fb_s4.sh # 四格圖
-./ig_s9.sh # IG九宮格
+./square.sh ./sample/photo.jpg # 顏色方圖
+./fb_s1.sh ./sample/photo.jpg # 單一大圖
+./fb_w2h1.sh ./sample/photo.jpg # 首圖長寬比 2:1(1大2小 首圖在上)
+./fb_w3h2.sh ./sample/photo.jpg # 首圖長寬比 3:2(1大3小 首圖在上)
+./fb_w1h2.sh ./sample/photo.jpg # 首圖長寬比 1:2(1大2小 首圖在左)
+./fb_w2h3.sh ./sample/photo.jpg # 首圖長寬比 2:3(1大3小 首圖在左)
+./fb_s4.sh ./sample/photo.jpg # 四格圖
+./ig_s9.sh ./sample/photo.jpg # IG九宮格
 ```
 
 

@@ -1,4 +1,4 @@
-./tool_filter.py --input ./sample/photo.jpg --brightness 0.8 --saturation 0.1
+./tool_filter.py --input $1 --brightness 0.8 --saturation 0.1
 ./tool_slice.py --input ./temp/output.jpg --output=a.jpg --width-proportion 2 1 --height-proportion 1
 ./tool_slice.py --input ./temp/1,0a.jpg --output=b.jpg --width-proportion 1 --height-proportion 1 1 1
 

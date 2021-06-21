@@ -78,10 +78,17 @@ print("fontfamily: ",args.fontfamily)
 print("text align: ",args.textalign)
 print(output,"text input (double enter next step): ")
 n=0
+enter_count=0
 for line in sys.stdin:
-    if '' == line.rstrip():
-        break
     s+=line
+    if '' == line.rstrip():
+        enter_count+=1
+        if enter_count == 2:
+            break
+        else:
+            continue
+    else:
+        enter_count=0
     # draw.text((300, 300+n*200), line, fill=args.fontcolor,font=font)
     # n+=1
 draw.text((300, 100), s, fill=args.fontcolor,font=font, align=args.textalign)

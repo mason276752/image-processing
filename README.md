@@ -16,15 +16,9 @@
 
 ## 效果
 ![](./square_example.jpg)
-![](./fb_example.jpg)
-![](./ig_example.jpg)
+![](./fb_w2h3_example.jpg)
+![](./ig_s9_example.jpg)
 
-## 範例
-```
-./square.sh
-./fb_w2_3_h1_1_1.sh
-./ig_w1_1_1_h1_1_1_1.sh
-```
 
 ## 簡易說明
 * 不設定邊框(border)顏色就不會有邊框
@@ -34,13 +28,31 @@
 FB 會偵測人臉會使得圖片預覽位置偏易，拼圖對不上。<br />
 建議用景物圖，或經過高斯模糊處理。
 
-### mode: 處理對象
+### 檔案
+./tool_filter.py 濾鏡
+./tool_slice.py 切片
+./tool_text.py 上字
+
+### ./tool_text.py mode: 處理對象
 0. 一大圖
 1. 2:1
 2. 3:2
 3. 1:2
 4. 2:3
 5. 四格圖
+
+## 範例
+```sh
+./square.sh # 顏色方圖
+./fb_s1.sh # 單一大圖
+./fb_w2h1.sh # 首圖長寬比 2:1(1大2小 首圖在上)
+./fb_w3h2.sh # 首圖長寬比 3:2(1大3小 首圖在上)
+./fb_w1h2.sh # 首圖長寬比 1:2(1大2小 首圖在左)
+./fb_w2h3.sh # 首圖長寬比 2:3(1大3小 首圖在左)
+./fb_s4.sh # 四格圖
+./ig_s9.sh # IG九宮格
+```
+
 
 ## LICENSE
 MIT

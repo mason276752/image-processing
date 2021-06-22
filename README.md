@@ -43,7 +43,7 @@ FB 會偵測人臉會使得圖片預覽位置偏易，拼圖對不上。<br />
 
 ## 範例
 ```sh
-./square.sh ./sample/photo.jpg # 顏色方圖
+./square.sh # 顏色方圖
 ./fb_s1.sh ./sample/photo.jpg # 單一大圖
 ./fb_w2h1.sh ./sample/photo.jpg # 首圖長寬比 2:1(1大2小 首圖在上)
 ./fb_w3h2.sh ./sample/photo.jpg # 首圖長寬比 3:2(1大3小 首圖在上)

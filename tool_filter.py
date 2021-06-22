@@ -1,28 +1,34 @@
 #!/usr/local/bin/python3
-from PIL import Image, ImageDraw, ImageFont, ImageFilter,ImageEnhance
-import sys 
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
+import sys
 import argparse
 from pathlib import Path
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--input", help="input image filename",default="photo.jpg")
-parser.add_argument("--blur", help="高斯模糊 GaussianBlur(float)",type=float, default=0) # 高斯模糊
-parser.add_argument("--saturation", help="飽和度 Color(float)",type=float, default=1) # 飽和度
-parser.add_argument("--brightness", help="亮度 Brightness(float)",type=float, default=1) # 亮度
-parser.add_argument("--sharpness", help="銳利度 Sharpness(float)",type=float, default=1) # 銳利度
-parser.add_argument("--contrast", help="對比 Contrast(float)",type=float, default=1) # 對比
-parser.add_argument("--output", help="output image filename",default="output.jpg")
+parser.add_argument("--input", help="input image filename",
+                    default="photo.jpg")
+parser.add_argument("--blur", help="高斯模糊 GaussianBlur(float)",
+                    type=float, default=0)  # 高斯模糊
+parser.add_argument("--saturation", help="飽和度 Color(float)",
+                    type=float, default=1)  # 飽和度
+parser.add_argument("--brightness", help="亮度 Brightness(float)",
+                    type=float, default=1)  # 亮度
+parser.add_argument("--sharpness", help="銳利度 Sharpness(float)",
+                    type=float, default=1)  # 銳利度
+parser.add_argument("--contrast", help="對比 Contrast(float)",
+                    type=float, default=1)  # 對比
+parser.add_argument(
+    "--output", help="output image filename", default="output.jpg")
 args = parser.parse_args()
 
-image=Image.open(args.input)
-
+image = Image.open(args.input)
 
 
 print("GaussianBlur: ", args.blur)
-image=image.filter(ImageFilter.GaussianBlur(args.blur))	#模糊
+image = image.filter(ImageFilter.GaussianBlur(args.blur))  # 模糊
 # image=image.filter(ImageFilter.CONTOUR)	#輪廓
-# image=image.filter(ImageFilter.DETAIL)	
+# image=image.filter(ImageFilter.DETAIL)
 # image=image.filter(ImageFilter.EDGE_ENHANCE)	#邊界加強
 # image=image.filter(ImageFilter.EDGE_ENHANCE_MORE)	#邊界加強(閥值更大)
 # image=image.filter(ImageFilter.EMBOSS)	#浮雕
